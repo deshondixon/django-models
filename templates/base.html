@@ -16,10 +16,13 @@
 
 </head>
 
-<body class="bg-green-50">
+<body class="bg-purple-100 text-3xl text-pink-800">
     <div class="container mx-auto mt-4">
-        {% block content %}
-        {% endblock content %}
+        <nav>
+        <h2><a href="{% url 'snack_list' %}">Snack Tracker</a></h2>
+        </nav>
+            {% block content %}
+            {% endblock content %}
     </div>
 </body>
 
